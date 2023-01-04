@@ -9,7 +9,7 @@ mongoose.connection.on('error', (error)=>{
     console.error(error);
 });
 
-async function mongoConnect(MONGO_URL){
+async function mongoConnect(){
     await mongoose.connect(MONGO_URL);
 };
 
